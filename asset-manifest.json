@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/bochcarev/static/css/main.248b22f4.chunk.css",
-    "main.js": "/bochcarev/static/js/main.7542deaf.chunk.js",
-    "main.js.map": "/bochcarev/static/js/main.7542deaf.chunk.js.map",
+    "main.js": "/bochcarev/static/js/main.fda7ca01.chunk.js",
+    "main.js.map": "/bochcarev/static/js/main.fda7ca01.chunk.js.map",
     "runtime-main.js": "/bochcarev/static/js/runtime-main.81079386.js",
     "runtime-main.js.map": "/bochcarev/static/js/runtime-main.81079386.js.map",
     "static/js/2.bf29d6b2.chunk.js": "/bochcarev/static/js/2.bf29d6b2.chunk.js",
     "static/js/2.bf29d6b2.chunk.js.map": "/bochcarev/static/js/2.bf29d6b2.chunk.js.map",
     "index.html": "/bochcarev/index.html",
-    "precache-manifest.c7630439726111518cf4a6db7fc9f478.js": "/bochcarev/precache-manifest.c7630439726111518cf4a6db7fc9f478.js",
+    "precache-manifest.57fb6d261a010bfd32b17592c859ac33.js": "/bochcarev/precache-manifest.57fb6d261a010bfd32b17592c859ac33.js",
     "service-worker.js": "/bochcarev/service-worker.js",
     "static/css/main.248b22f4.chunk.css.map": "/bochcarev/static/css/main.248b22f4.chunk.css.map",
     "static/js/2.bf29d6b2.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.bf29d6b2.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.81079386.js",
     "static/js/2.bf29d6b2.chunk.js",
     "static/css/main.248b22f4.chunk.css",
-    "static/js/main.7542deaf.chunk.js"
+    "static/js/main.fda7ca01.chunk.js"
   ]
 }
