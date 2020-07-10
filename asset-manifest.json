@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/bochcarev/static/css/main.248b22f4.chunk.css",
-    "main.js": "/bochcarev/static/js/main.82aa9327.chunk.js",
-    "main.js.map": "/bochcarev/static/js/main.82aa9327.chunk.js.map",
+    "main.js": "/bochcarev/static/js/main.207a74ae.chunk.js",
+    "main.js.map": "/bochcarev/static/js/main.207a74ae.chunk.js.map",
     "runtime-main.js": "/bochcarev/static/js/runtime-main.81079386.js",
     "runtime-main.js.map": "/bochcarev/static/js/runtime-main.81079386.js.map",
-    "static/js/2.db8cf302.chunk.js": "/bochcarev/static/js/2.db8cf302.chunk.js",
-    "static/js/2.db8cf302.chunk.js.map": "/bochcarev/static/js/2.db8cf302.chunk.js.map",
+    "static/js/2.10daf913.chunk.js": "/bochcarev/static/js/2.10daf913.chunk.js",
+    "static/js/2.10daf913.chunk.js.map": "/bochcarev/static/js/2.10daf913.chunk.js.map",
     "index.html": "/bochcarev/index.html",
-    "precache-manifest.b244d4834db701ba8609159dcd1aa734.js": "/bochcarev/precache-manifest.b244d4834db701ba8609159dcd1aa734.js",
+    "precache-manifest.5e6781775ac46997a505fc09aa84cfd7.js": "/bochcarev/precache-manifest.5e6781775ac46997a505fc09aa84cfd7.js",
     "service-worker.js": "/bochcarev/service-worker.js",
     "static/css/main.248b22f4.chunk.css.map": "/bochcarev/static/css/main.248b22f4.chunk.css.map",
-    "static/js/2.db8cf302.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.db8cf302.chunk.js.LICENSE.txt",
+    "static/js/2.10daf913.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.10daf913.chunk.js.LICENSE.txt",
     "static/media/CarouselBackground.scss": "/bochcarev/static/media/carousel_item_1.42185235.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.81079386.js",
-    "static/js/2.db8cf302.chunk.js",
+    "static/js/2.10daf913.chunk.js",
     "static/css/main.248b22f4.chunk.css",
-    "static/js/main.82aa9327.chunk.js"
+    "static/js/main.207a74ae.chunk.js"
   ]
 }
