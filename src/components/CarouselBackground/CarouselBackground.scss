@@ -1,13 +1,7 @@
 .carousel-background {
   &__img {
-    // background-image: url("../../assets/carousel_item_1.jpg");
     height: 1500px;
   }
-
-  // &__item-background{
-  //   background-image: url("../../assets/carousel_item_2.jpg");
-  // }
-
   @media (max-width: 600px) {
     &__img {
       height: 1500px;

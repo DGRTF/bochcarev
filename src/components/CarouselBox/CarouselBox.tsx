@@ -6,16 +6,7 @@ export default class CarouselBox extends Component {
   render() {
     return (
       <div>
-        <Carousel 
-        // fade={true} 
-        // slide={false}
-        // interval={3000}
-        // indicators={false}
-        // keyboard={false}
-        // touch={false}
-        // controls={false}
-        // wrap={false}
-        >
+        <Carousel>
           <Carousel.Item>
             <img
               className='d-block w-100'

@@ -6,7 +6,7 @@ import { Form, Button } from 'react-bootstrap'
 export default class FormCall extends Component {
   render() {
     return (
-      <div>
+      <div className='form-call'>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Control type="text" placeholder="Ваше имя" />

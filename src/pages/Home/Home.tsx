@@ -3,7 +3,6 @@ import './Home.scss';
 import CarouselBackground from '../../components/CarouselBackground/CarouselBackground';
 import FormCall from '../../components/FormCall/FormCall';
 import NavBar from '../../components/NavBar/NavBar';
-import Text from '../../components/Text/Text';
 import { Card } from 'react-bootstrap';
 import price_card_1 from '../../assets/price_card_1.jpg';
 

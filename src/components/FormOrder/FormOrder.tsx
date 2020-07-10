@@ -11,7 +11,6 @@ import { connect } from 'react-redux';
 
 interface ImapDispatchToProps {
   closeOrderForm?: () => (dispatch: any, setState: () => StateType) => void;
-  // openCallForm?: () => (dispatch: any, setState: () => StateType) => void;
 }
 
 interface IFormOrderProps extends ImapDispatchToProps{

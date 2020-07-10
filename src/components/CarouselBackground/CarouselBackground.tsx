@@ -9,14 +9,12 @@ export default class CarouselBackground extends Component {
     return (
       <div className='carousel-background'>
         <Carousel
-          // fade={true} 
           slide={false}
           interval={5000}
           indicators={false}
           keyboard={false}
           touch={false}
           controls={false}
-        // wrap={false}
         >
           <Carousel.Item>
             <img

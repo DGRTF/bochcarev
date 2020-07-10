@@ -1,9 +1,15 @@
-.card-box{
+.card-box {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 
   & > * {
     margin: 1.2em;
+  }
+
+  &__cards {
+    min-width: 18rem;
+    width: 18rem;
+    max-width: 18rem;
   }
 }

@@ -23,7 +23,7 @@ class CardsBox extends Component<ICardsBoxProps> {
   render() {
     return (
       <div className='card-box'>
-        <Card border='' style={{ minWidth: '18rem', width: '18rem', maxWidth: '18rem' }}>
+        <Card className='card-box__cards'>
           <Card.Img variant="top" src={price_card_1} />
           <Card.Body>
             <Card.Title>Баня-бочка 1</Card.Title>
@@ -33,7 +33,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Button onClick={this.openOrderForm.bind(this)} variant="primary">Заказать</Button>
           </Card.Body>
         </Card>
-        <Card style={{ minWidth: '18rem', width: '18rem', maxWidth: '18rem' }}>
+        <Card className='card-box__cards'>
           <Card.Img variant="top" src={price_card_1} />
           <Card.Body>
             <Card.Title>Баня-бочка 2</Card.Title>
@@ -43,7 +43,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Button onClick={this.openOrderForm.bind(this)} variant="primary">Заказать</Button>
           </Card.Body>
         </Card>
-        <Card style={{ minWidth: '18rem', width: '18rem', maxWidth: '18rem' }}>
+        <Card className='card-box__cards'>
           <Card.Img variant="top" src={price_card_1} />
           <Card.Body>
             <Card.Title>Баня-бочка 3</Card.Title>
@@ -53,7 +53,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Button onClick={this.openOrderForm.bind(this)} variant="primary">Заказать</Button>
           </Card.Body>
         </Card>
-        <Card style={{ minWidth: '18rem', width: '18rem', maxWidth: '18rem' }}>
+        <Card className='card-box__cards'>
           <Card.Img variant="top" src={price_card_1} />
           <Card.Body>
             <Card.Title>Не определились с выбором?</Card.Title>
