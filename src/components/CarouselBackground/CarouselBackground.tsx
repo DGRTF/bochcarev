@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Carousel } from 'react-bootstrap'
 import carousel_item_1 from '../../assets/carousel_item_1.jpg';
+import carousel_item_2 from '../../assets/carousel_item_2.jpg';
 import './CarouselBackground.scss';
 
 export default class CarouselBackground extends Component {
@@ -10,8 +11,8 @@ export default class CarouselBackground extends Component {
         <Carousel
           // fade={true} 
           slide={false}
-          interval={1000}
-          // indicators={false}
+          interval={5000}
+          indicators={false}
           keyboard={false}
           touch={false}
           controls={false}
@@ -19,18 +20,21 @@ export default class CarouselBackground extends Component {
         >
           <Carousel.Item>
             <img
+              style={{ backgroundImage: `url(${carousel_item_1})` }}
               className='d-block w-100 carousel-background__img'
               alt='First slide'
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
+              style={{ backgroundImage: `url(${carousel_item_2})` }}
               className='d-block w-100 carousel-background__img'
               alt='First slide'
             />
           </Carousel.Item>
           <Carousel.Item>
             <img
+              style={{ backgroundImage: `url(${carousel_item_1})` }}
               className='d-block w-100 carousel-background__img'
               alt='First slide'
             />

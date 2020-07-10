@@ -1,23 +1,42 @@
-.price{
-
-  &__content{
+.price {
+  &__card-box {
     position: absolute;
-    top: 200px;
+    padding-top: 60px;
+    transition: right 0.6s;
+    top: 0;
     width: 100%;
-    height: 100%;
-    padding: 40px;
+    // transition: opacity 1s;
+  }
+
+  &__form-call {
+    position: fixed;
+    top: 0;
+    padding-top: 100px;
+    transition: right 0.6s;
+    // transition: opacity 1s;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 
-  &__form-call{
-    margin-top: 50px;
+  &__form-order {
+    position: fixed;
+    top: 0;
+    padding-top: 100px;
+    transition: right 0.6s;
+    // transition: opacity .1s;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
-  @media(min-width:600px){
-    padding-left: 0;
-    padding-right: 0;
+  &-hide {
+    right: 10000px;
+    // opacity: 0;
+  }
+
+  &-show {
+    right: 0px;
+    // opacity: 1;
   }
 }

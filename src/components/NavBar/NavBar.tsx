@@ -1,17 +1,19 @@
 import React, { Component } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
+import { Link, NavLink } from 'react-router-dom'
+import './NavBar.scss';
 
 export default class NavBar extends Component {
   render() {
     return (
-      <div>
+      <div className='navbar'>
         <Navbar collapseOnSelect fixed='top' expand="lg" bg="dark" variant='dark'>
-          <Navbar.Brand href="/">Бочкарёв</Navbar.Brand>
+          <Link className='navbar__links' to={`${process.env.PUBLIC_URL}/`}>Label</Link>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/">Главная</Nav.Link>
-              <Nav.Link href="/price">Каталог</Nav.Link>
-              <Nav.Link href="/gallery">Галерея</Nav.Link>
+              <NavLink className='navbar__links' to={`${process.env.PUBLIC_URL}/`}>Главная</NavLink>
+              <NavLink className='navbar__links' to={`${process.env.PUBLIC_URL}/price`}>Каталог</NavLink>
+              <NavLink className='navbar__links' to={`${process.env.PUBLIC_URL}/gallery`}>Галерея</NavLink>
             </Nav>
           </Navbar.Collapse>
           <Navbar.Collapse className="justify-content-end">

@@ -1,12 +1,12 @@
-.form-order{
-  display: inline-block;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 4px;
-  width: 18em;
+.form-order {
+  // display: inline-block;
+  // background-color: #fff;
+  // padding: 20px;
+  // border-radius: 4px;
+  // width: 18em;
 
-  &__header{
-    margin-bottom: 1.5em;
-    font-size: 24px;
+  &__header {
+    display: flex;
+    justify-content: flex-end;
   }
 }

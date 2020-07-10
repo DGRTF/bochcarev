@@ -20,12 +20,11 @@ export default class App extends Component {
     return (
       <div>
         <div className='App'>
-          <NavBar />
           <Router history={history}>
             {/* <Switch> */}
-              <Route exact path='/' component={Home} />
-              <Route exact path='/gallery' component={Gallery} />
-              <Route exact path='/price' component={Price} />
+            <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+            <Route exact path={`${process.env.PUBLIC_URL}/price`} component={Price} />
+            <Route exact path={`${process.env.PUBLIC_URL}/gallery`} component={Gallery} />
             {/* </Switch> */}
           </Router>
         </div>

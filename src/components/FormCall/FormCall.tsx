@@ -2,18 +2,11 @@ import React, { Component } from 'react'
 import './FormCall.scss';
 import { Form, Button } from 'react-bootstrap'
 
-interface IFormCallProps {
-  textHeader?: string;
-}
 
-export default class FormCall extends Component<IFormCallProps> {
-  private textHeader = 'Закажите звонок прямо сейчас и мы ответим на все ваши вопросы!'
+export default class FormCall extends Component {
   render() {
     return (
-      <div className='form-call'>
-        <div className='form-call__header'>
-          {this.props.textHeader ? this.props.textHeader : this.textHeader}
-        </div>
+      <div>
         <Form>
           <Form.Group controlId="formBasicEmail">
             <Form.Control type="text" placeholder="Ваше имя" />

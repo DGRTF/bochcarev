@@ -1,0 +1,20 @@
+.navbar {
+  &__links {
+    color: hsla(0, 0%, 100%, 0.5);
+    margin: 10px;
+
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    &_active{
+      color: red;
+    }
+  }
+}
