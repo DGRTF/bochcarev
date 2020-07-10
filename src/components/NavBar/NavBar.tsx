@@ -6,11 +6,11 @@ export default class NavBar extends Component {
     return (
       <div>
         <Navbar collapseOnSelect fixed='top' expand="lg" bg="dark" variant='dark'>
-          <Navbar.Brand href="/">Navbar with text</Navbar.Brand>
+          <Navbar.Brand href="/">Бочкарёв</Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link href="/">Главная</Nav.Link>
-              <Nav.Link href="/price">Наши цены</Nav.Link>
+              <Nav.Link href="/price">Каталог</Nav.Link>
               <Nav.Link href="/gallery">Галерея</Nav.Link>
             </Nav>
           </Navbar.Collapse>
