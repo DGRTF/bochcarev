@@ -1,0 +1,23 @@
+.price{
+
+  &__content{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__form-call{
+    margin-top: 50px;
+  }
+
+  @media(min-width:600px){
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
