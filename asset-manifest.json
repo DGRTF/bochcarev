@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/bochcarev/static/css/main.d4801613.chunk.css",
+    "main.css": "/bochcarev/static/css/main.cc4eac7b.chunk.css",
     "main.js": "/bochcarev/static/js/main.de2c035e.chunk.js",
     "main.js.map": "/bochcarev/static/js/main.de2c035e.chunk.js.map",
     "runtime-main.js": "/bochcarev/static/js/runtime-main.81079386.js",
@@ -8,9 +8,9 @@
     "static/js/2.480cf303.chunk.js": "/bochcarev/static/js/2.480cf303.chunk.js",
     "static/js/2.480cf303.chunk.js.map": "/bochcarev/static/js/2.480cf303.chunk.js.map",
     "index.html": "/bochcarev/index.html",
-    "precache-manifest.587e6c9574d9956bc382922aac01ca1c.js": "/bochcarev/precache-manifest.587e6c9574d9956bc382922aac01ca1c.js",
+    "precache-manifest.2c9ed1a3343b654c294c49b0a2739812.js": "/bochcarev/precache-manifest.2c9ed1a3343b654c294c49b0a2739812.js",
     "service-worker.js": "/bochcarev/service-worker.js",
-    "static/css/main.d4801613.chunk.css.map": "/bochcarev/static/css/main.d4801613.chunk.css.map",
+    "static/css/main.cc4eac7b.chunk.css.map": "/bochcarev/static/css/main.cc4eac7b.chunk.css.map",
     "static/js/2.480cf303.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.480cf303.chunk.js.LICENSE.txt",
     "static/media/carousel_item_1.jpg": "/bochcarev/static/media/carousel_item_1.e1c11147.jpg",
     "static/media/carousel_item_2.jpg": "/bochcarev/static/media/carousel_item_2.01f8d636.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.81079386.js",
     "static/js/2.480cf303.chunk.js",
-    "static/css/main.d4801613.chunk.css",
+    "static/css/main.cc4eac7b.chunk.css",
     "static/js/main.de2c035e.chunk.js"
   ]
 }
