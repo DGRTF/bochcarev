@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/bochcarev/static/css/main.f7314c6a.chunk.css",
-    "main.js": "/bochcarev/static/js/main.3477278b.chunk.js",
-    "main.js.map": "/bochcarev/static/js/main.3477278b.chunk.js.map",
+    "main.css": "/bochcarev/static/css/main.d4801613.chunk.css",
+    "main.js": "/bochcarev/static/js/main.de2c035e.chunk.js",
+    "main.js.map": "/bochcarev/static/js/main.de2c035e.chunk.js.map",
     "runtime-main.js": "/bochcarev/static/js/runtime-main.81079386.js",
     "runtime-main.js.map": "/bochcarev/static/js/runtime-main.81079386.js.map",
     "static/js/2.480cf303.chunk.js": "/bochcarev/static/js/2.480cf303.chunk.js",
     "static/js/2.480cf303.chunk.js.map": "/bochcarev/static/js/2.480cf303.chunk.js.map",
     "index.html": "/bochcarev/index.html",
-    "precache-manifest.ff59770c8a3835deb057f947a33d59be.js": "/bochcarev/precache-manifest.ff59770c8a3835deb057f947a33d59be.js",
+    "precache-manifest.587e6c9574d9956bc382922aac01ca1c.js": "/bochcarev/precache-manifest.587e6c9574d9956bc382922aac01ca1c.js",
     "service-worker.js": "/bochcarev/service-worker.js",
-    "static/css/main.f7314c6a.chunk.css.map": "/bochcarev/static/css/main.f7314c6a.chunk.css.map",
+    "static/css/main.d4801613.chunk.css.map": "/bochcarev/static/css/main.d4801613.chunk.css.map",
     "static/js/2.480cf303.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.480cf303.chunk.js.LICENSE.txt",
     "static/media/carousel_item_1.jpg": "/bochcarev/static/media/carousel_item_1.e1c11147.jpg",
     "static/media/carousel_item_2.jpg": "/bochcarev/static/media/carousel_item_2.01f8d636.jpg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.81079386.js",
     "static/js/2.480cf303.chunk.js",
-    "static/css/main.f7314c6a.chunk.css",
-    "static/js/main.3477278b.chunk.js"
+    "static/css/main.d4801613.chunk.css",
+    "static/js/main.de2c035e.chunk.js"
   ]
 }
