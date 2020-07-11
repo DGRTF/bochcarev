@@ -22,8 +22,8 @@ export default class Home extends Component {
                   alt='First slide'
                 />
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h4>Лучшее качество</h4>
+                  {/* <p>Контролькачества на каждом этапе производства.</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -33,8 +33,8 @@ export default class Home extends Component {
                   alt='First slide'
                 />
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h4>Низкие цены</h4>
+                  {/* <p>Благодаря большим объёмам мы можем предложить самые низкие цены</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
@@ -44,8 +44,8 @@ export default class Home extends Component {
                   alt='First slide'
                 />
                 <Carousel.Caption>
-                  <h3>First slide label</h3>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  <h4>Команда профессионалов</h4>
+                  {/* <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>

@@ -69,10 +69,12 @@ class CardsBox extends Component<ICardsBoxProps> {
 
   private openOrderForm() {
     this.props.openOrderForm();
+    window.scrollTo(null, 0);
   }
 
   private openCallForm() {
     this.props.openCallForm();
+    window.scrollTo(null, 0);
   }
 }
 

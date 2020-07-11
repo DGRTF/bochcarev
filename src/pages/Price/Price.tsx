@@ -24,7 +24,7 @@ interface ImapDispatchToProps {
   closeCallForm?: () => (dispatch: any, setState: () => StateType) => void;
 }
 
-interface IPriceProps extends ImapStateToProps,ImapDispatchToProps { }
+interface IPriceProps extends ImapStateToProps, ImapDispatchToProps { }
 
 class Price extends Component<IPriceProps> {
   render() {
@@ -40,13 +40,16 @@ class Price extends Component<IPriceProps> {
         </div>
         <div className={`price__form-call ${this.props.priceVisible.visibleCallForm ? 'price-show' : 'price-hide'}`}>
           <Card style={{ minWidth: '18rem', width: '18rem', maxWidth: '18rem' }}>
-            <Card.Header className='form-order__header'>
-              <Button onClick={this.closeCallForm.bind(this)} variant="danger" block>
-                X
+            <Card.Header className='price__header-form'>
+              <FormCall />
+            </Card.Header>
+            <Card.Header>
+              <Button onClick={this.closeCallForm.bind(this)} variant="danger" >
+                Закрыть
               </Button>
             </Card.Header>
-            <Card.Img variant="top" src={price_card_1} />
-            <Card.Body>
+            <Card.Img className='price__card-img' variant="top" src={price_card_1} />
+            <Card.Body className='price__body-form'>
               <FormCall />
             </Card.Body>
           </Card>
@@ -57,6 +60,7 @@ class Price extends Component<IPriceProps> {
 
   private closeCallForm() {
     this.props.closeCallForm();
+    window.scrollTo(null, 0);
   }
 }
 

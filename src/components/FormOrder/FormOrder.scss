@@ -1,12 +1,27 @@
 .form-order {
-  // display: inline-block;
-  // background-color: #fff;
-  // padding: 20px;
-  // border-radius: 4px;
-  // width: 18em;
+  &__header-form {
+    display: none;
+  }
 
-  &__header {
-    display: flex;
-    justify-content: flex-end;
+  &__body-form {
+  }
+
+  &__card-img{
+  }
+
+  @media (max-height: 600px)
+  //  and (max-width: 1000) 
+   {
+    &__header-form {
+      display: block;
+    }
+
+    &__body-form {
+      display: none;
+    }
+
+    &__card-img{
+      display: none;
+    }
   }
 }
