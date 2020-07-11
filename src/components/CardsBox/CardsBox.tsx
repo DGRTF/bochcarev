@@ -30,7 +30,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Card.Text>
               Описание Баня-бочка 3
             </Card.Text>
-            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Заказать</Button>
+            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
           </Card.Body>
         </Card>
         <Card className='card-box__cards'>
@@ -40,7 +40,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Card.Text>
               Описание Баня-бочка 2
             </Card.Text>
-            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Заказать</Button>
+            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
           </Card.Body>
         </Card>
         <Card className='card-box__cards'>
@@ -50,7 +50,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Card.Text>
               Описание Баня-бочка 3
             </Card.Text>
-            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Заказать</Button>
+            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
           </Card.Body>
         </Card>
         <Card className='card-box__cards'>
