@@ -40,9 +40,6 @@ class Price extends Component<IPriceProps> {
         </div>
         <div className={`price__form-call ${this.props.priceVisible.visibleCallForm ? 'price-show' : 'price-hide'}`}>
           <Card style={{ minWidth: '18rem', width: '18rem', maxWidth: '18rem' }}>
-            <Card.Header className='price__header-form'>
-              <FormCall />
-            </Card.Header>
             <Card.Header>
               <Button onClick={this.closeCallForm.bind(this)} variant="danger" >
                 Закрыть

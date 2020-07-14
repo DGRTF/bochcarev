@@ -1,27 +1,2 @@
 .form-order {
-  &__header-form {
-    display: none;
-  }
-
-  &__body-form {
-  }
-
-  &__card-img{
-  }
-
-  @media (max-height: 600px)
-  //  and (max-width: 1000) 
-   {
-    &__header-form {
-      display: block;
-    }
-
-    &__body-form {
-      display: none;
-    }
-
-    &__card-img{
-      display: none;
-    }
-  }
 }

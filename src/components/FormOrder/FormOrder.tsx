@@ -23,22 +23,6 @@ class FormOrder extends Component<IFormOrderProps> {
       <div>
         <div className='form-order'>
           <Card style={{ minWidth: '18rem', width: '18rem', maxWidth: '18rem' }}>
-            <Card.Header className='form-order__header-form' >
-              <Form>
-                <Form.Group controlId="formBasicEmail">
-                  <Form.Control type="text" placeholder="Ваше имя" />
-                </Form.Group>
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Control type="tel" placeholder="Номер телефона" />
-                </Form.Group>
-                <Form.Group controlId="formBasicPassword">
-                  <Form.Control type="hidden" name='id' value={this.props.id} />
-                </Form.Group>
-                <Button variant="primary" type="submit">
-                  Заказать баню-бочку
-                </Button>
-              </Form>
-            </Card.Header>
             <Card.Header >
               <Button onClick={this.closeOrderForm.bind(this)} variant="danger" >
                 Закрыть
