@@ -33,7 +33,7 @@ class Price extends Component<IPriceProps> {
         <NavBar />
         <CarouselBackground />
         <div className={`price__form-order ${this.props.priceVisible.visibleOrderForm ? 'price-show' : 'price-hide'}`}>
-          <FormOrder id={0} />
+          <FormOrder />
         </div>
         <div className={`price__card-box ${this.props.priceVisible.visibleProducts ? 'price-show' : 'price-hide'}`}>
           <CardsBox />

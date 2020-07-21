@@ -9,10 +9,15 @@ import {
   openOrderForm,
   openCallForm,
 } from '../../store/actions/PriceVisible/PriceVisible';
+import { setIdBarrel } from '../../store/actions/Barrel/Barrel';
 
 interface ImapDispatchToProps {
   openOrderForm?: () => (dispatch: any, setState: () => StateType) => void;
   openCallForm?: () => (dispatch: any, setState: () => StateType) => void;
+  setIdBarrel?: (idBarrel: number) => {
+    type: "BARREL_SET_ID";
+    payload: number;
+  }
 }
 
 interface ICardsBoxProps extends ImapDispatchToProps {
@@ -30,7 +35,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Card.Text>
               Описание Баня-бочка 3
             </Card.Text>
-            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
+            <Button data-id={1} onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
           </Card.Body>
         </Card>
         <Card className='card-box__cards'>
@@ -40,7 +45,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Card.Text>
               Описание Баня-бочка 2
             </Card.Text>
-            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
+            <Button data-id={2} onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
           </Card.Body>
         </Card>
         <Card className='card-box__cards'>
@@ -50,7 +55,7 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Card.Text>
               Описание Баня-бочка 3
             </Card.Text>
-            <Button onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
+            <Button data-id={3} onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
           </Card.Body>
         </Card>
         <Card className='card-box__cards'>
@@ -67,8 +72,11 @@ class CardsBox extends Component<ICardsBoxProps> {
     )
   }
 
-  private openOrderForm() {
+  private openOrderForm(ev: React.MouseEvent) {
     this.props.openOrderForm();
+    const el = ev.currentTarget as HTMLElement;
+    const id = Number(el.dataset.id);
+    this.props.setIdBarrel(id);
     window.scrollTo(null, 0);
   }
 
@@ -82,6 +90,7 @@ function mapDispatchToProps(dispatch: any) {
   return bindActionCreators({
     openOrderForm,
     openCallForm,
+    setIdBarrel,
   }, dispatch);
 }
 
