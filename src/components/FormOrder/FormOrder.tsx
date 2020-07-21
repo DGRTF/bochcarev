@@ -90,11 +90,11 @@ class FormOrder extends Component<IFormOrderProps, IFormOrderState> {
   private priceBarrel(): number {
     switch (this.props.barrel.id) {
       case 1:
-        return 119000
+        return 119000 + this.previousPriceSelect
       case 2:
-        return 120000
+        return 120000 + this.previousPriceSelect
       case 3:
-        return 121000
+        return 121000 + this.previousPriceSelect
       default:
         return 0
     }
@@ -109,21 +109,21 @@ class FormOrder extends Component<IFormOrderProps, IFormOrderState> {
   private changePrice(value: string) {
     switch (value) {
       case '2м':
-       return this.changePriceSetState(0)
+        return this.changePriceSetState(0)
       case '3м':
-       return this.changePriceSetState(20000)
+        return this.changePriceSetState(20000)
       case '3.5м':
-       return this.changePriceSetState(30000)
+        return this.changePriceSetState(30000)
       case '4м':
-       return this.changePriceSetState(50000)
+        return this.changePriceSetState(50000)
       case '4.5м':
-       return this.changePriceSetState(60000)
+        return this.changePriceSetState(60000)
       case '5м':
-       return this.changePriceSetState(80000)
+        return this.changePriceSetState(80000)
       case '5.5м':
-       return this.changePriceSetState(90000)
+        return this.changePriceSetState(90000)
       case '6м':
-       return this.changePriceSetState(100000)
+        return this.changePriceSetState(100000)
       default:
         return 0
     }
@@ -139,6 +139,7 @@ class FormOrder extends Component<IFormOrderProps, IFormOrderState> {
   private closeOrderForm() {
     this.props.closeOrderForm();
     window.scrollTo(null, 0);
+
   }
 }
 
