@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "95cab9942fe6c195516eaf1a9e5dd100",
+    "revision": "36dcff693503ad62f52276a6926f90f0",
     "url": "/bochcarev/index.html"
   },
   {
-    "revision": "4d6a81da22e324becf5b",
-    "url": "/bochcarev/static/css/main.3488995d.chunk.css"
+    "revision": "e8943d3b17b9bdf96274",
+    "url": "/bochcarev/static/css/main.b6f7ce85.chunk.css"
   },
   {
-    "revision": "187a841e7cd10e7ba7e7",
-    "url": "/bochcarev/static/js/2.2db59936.chunk.js"
+    "revision": "534285900dc0daf7067f",
+    "url": "/bochcarev/static/js/2.eba214d9.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/bochcarev/static/js/2.2db59936.chunk.js.LICENSE.txt"
+    "url": "/bochcarev/static/js/2.eba214d9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d6a81da22e324becf5b",
-    "url": "/bochcarev/static/js/main.38d5a3cc.chunk.js"
+    "revision": "e8943d3b17b9bdf96274",
+    "url": "/bochcarev/static/js/main.1eb1f828.chunk.js"
   },
   {
     "revision": "7554bb934ae86ae2959d",
     "url": "/bochcarev/static/js/runtime-main.81079386.js"
+  },
+  {
+    "revision": "3d2475b3fc263e93cb5879caf68f7b82",
+    "url": "/bochcarev/static/media/logotype.3d2475b3.png"
   },
   {
     "revision": "9f626bd327c128559dfa1ba28c753e59",

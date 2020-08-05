@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/bochcarev/static/css/main.3488995d.chunk.css",
-    "main.js": "/bochcarev/static/js/main.38d5a3cc.chunk.js",
-    "main.js.map": "/bochcarev/static/js/main.38d5a3cc.chunk.js.map",
+    "main.css": "/bochcarev/static/css/main.b6f7ce85.chunk.css",
+    "main.js": "/bochcarev/static/js/main.1eb1f828.chunk.js",
+    "main.js.map": "/bochcarev/static/js/main.1eb1f828.chunk.js.map",
     "runtime-main.js": "/bochcarev/static/js/runtime-main.81079386.js",
     "runtime-main.js.map": "/bochcarev/static/js/runtime-main.81079386.js.map",
-    "static/js/2.2db59936.chunk.js": "/bochcarev/static/js/2.2db59936.chunk.js",
-    "static/js/2.2db59936.chunk.js.map": "/bochcarev/static/js/2.2db59936.chunk.js.map",
+    "static/js/2.eba214d9.chunk.js": "/bochcarev/static/js/2.eba214d9.chunk.js",
+    "static/js/2.eba214d9.chunk.js.map": "/bochcarev/static/js/2.eba214d9.chunk.js.map",
     "index.html": "/bochcarev/index.html",
-    "precache-manifest.079186508a59337967cb7cd383c0ad0c.js": "/bochcarev/precache-manifest.079186508a59337967cb7cd383c0ad0c.js",
+    "precache-manifest.9c857bc3db755e636563220ef08eb394.js": "/bochcarev/precache-manifest.9c857bc3db755e636563220ef08eb394.js",
     "service-worker.js": "/bochcarev/service-worker.js",
-    "static/css/main.3488995d.chunk.css.map": "/bochcarev/static/css/main.3488995d.chunk.css.map",
-    "static/js/2.2db59936.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.2db59936.chunk.js.LICENSE.txt",
+    "static/css/main.b6f7ce85.chunk.css.map": "/bochcarev/static/css/main.b6f7ce85.chunk.css.map",
+    "static/js/2.eba214d9.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.eba214d9.chunk.js.LICENSE.txt",
+    "static/media/logotype.png": "/bochcarev/static/media/logotype.3d2475b3.png",
     "static/media/pexels-andrea-piacquadio-789822.jpg": "/bochcarev/static/media/pexels-andrea-piacquadio-789822.9f626bd3.jpg",
     "static/media/pexels-jeshootscom-834892.jpg": "/bochcarev/static/media/pexels-jeshootscom-834892.8a70b339.jpg",
     "static/media/pexels-jonathan-borba-3689188.jpg": "/bochcarev/static/media/pexels-jonathan-borba-3689188.5b21f88c.jpg",
@@ -19,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.81079386.js",
-    "static/js/2.2db59936.chunk.js",
-    "static/css/main.3488995d.chunk.css",
-    "static/js/main.38d5a3cc.chunk.js"
+    "static/js/2.eba214d9.chunk.js",
+    "static/css/main.b6f7ce85.chunk.css",
+    "static/js/main.1eb1f828.chunk.js"
   ]
 }
