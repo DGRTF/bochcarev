@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/bochcarev/static/css/main.46595011.chunk.css",
-    "main.js": "/bochcarev/static/js/main.e6dd0fa6.chunk.js",
-    "main.js.map": "/bochcarev/static/js/main.e6dd0fa6.chunk.js.map",
+    "main.css": "/bochcarev/static/css/main.3488995d.chunk.css",
+    "main.js": "/bochcarev/static/js/main.9dcfb9ba.chunk.js",
+    "main.js.map": "/bochcarev/static/js/main.9dcfb9ba.chunk.js.map",
     "runtime-main.js": "/bochcarev/static/js/runtime-main.81079386.js",
     "runtime-main.js.map": "/bochcarev/static/js/runtime-main.81079386.js.map",
-    "static/js/2.21fabba1.chunk.js": "/bochcarev/static/js/2.21fabba1.chunk.js",
-    "static/js/2.21fabba1.chunk.js.map": "/bochcarev/static/js/2.21fabba1.chunk.js.map",
+    "static/js/2.2db59936.chunk.js": "/bochcarev/static/js/2.2db59936.chunk.js",
+    "static/js/2.2db59936.chunk.js.map": "/bochcarev/static/js/2.2db59936.chunk.js.map",
     "index.html": "/bochcarev/index.html",
-    "precache-manifest.a498fabd46f541f56456b4b235d75657.js": "/bochcarev/precache-manifest.a498fabd46f541f56456b4b235d75657.js",
+    "precache-manifest.9b24b5b53b80bbf246404bdbd1afe5c2.js": "/bochcarev/precache-manifest.9b24b5b53b80bbf246404bdbd1afe5c2.js",
     "service-worker.js": "/bochcarev/service-worker.js",
-    "static/css/main.46595011.chunk.css.map": "/bochcarev/static/css/main.46595011.chunk.css.map",
-    "static/js/2.21fabba1.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.21fabba1.chunk.js.LICENSE.txt",
+    "static/css/main.3488995d.chunk.css.map": "/bochcarev/static/css/main.3488995d.chunk.css.map",
+    "static/js/2.2db59936.chunk.js.LICENSE.txt": "/bochcarev/static/js/2.2db59936.chunk.js.LICENSE.txt",
     "static/media/pexels-andrea-piacquadio-789822.jpg": "/bochcarev/static/media/pexels-andrea-piacquadio-789822.9f626bd3.jpg",
-    "static/media/pexels-miguel-á-padriñán-3930091.jpg": "/bochcarev/static/media/pexels-miguel-á-padriñán-3930091.1551bf80.jpg",
-    "static/media/pexels-pixabay-210574.jpg": "/bochcarev/static/media/pexels-pixabay-210574.f32a397c.jpg",
-    "static/media/pexels-tirachard-kumtanom-733854.jpg": "/bochcarev/static/media/pexels-tirachard-kumtanom-733854.44748303.jpg"
+    "static/media/pexels-jeshootscom-834892.jpg": "/bochcarev/static/media/pexels-jeshootscom-834892.8a70b339.jpg",
+    "static/media/pexels-jonathan-borba-3689188.jpg": "/bochcarev/static/media/pexels-jonathan-borba-3689188.5b21f88c.jpg",
+    "static/media/pexels-tirachard-kumtanom-733854.jpg": "/bochcarev/static/media/pexels-tirachard-kumtanom-733854.8bff2308.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.81079386.js",
-    "static/js/2.21fabba1.chunk.js",
-    "static/css/main.46595011.chunk.css",
-    "static/js/main.e6dd0fa6.chunk.js"
+    "static/js/2.2db59936.chunk.js",
+    "static/css/main.3488995d.chunk.css",
+    "static/js/main.9dcfb9ba.chunk.js"
   ]
 }
