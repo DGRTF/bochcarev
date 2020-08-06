@@ -10,6 +10,10 @@ import {
   openCallForm,
 } from '../../store/actions/PriceVisible/PriceVisible';
 import { setIdBarrel } from '../../store/actions/Barrel/Barrel';
+import BarrelCircleForm from '../BarrelCircleForm/BarrelCircleForm';
+import BarrelSquareForm from '../BarrelSquareForm/BarrelSquareForm';
+import FormCall from '../FormCall/FormCall';
+import callImg from '../../assets/pexels-andrea-piacquadio-789822.jpg';
 
 interface ImapDispatchToProps {
   openOrderForm?: () => (dispatch: any, setState: () => StateType) => void;
@@ -28,27 +32,29 @@ class CardsBox extends Component<ICardsBoxProps> {
   render() {
     return (
       <div className='card-box'>
-        <Card className='card-box__cards'>
+        <Card className='card-box__cards' border='info'>
           <Card.Img variant="top" src={price_card_1} />
           <Card.Body>
-            <Card.Title>Баня-бочка 1</Card.Title>
-            <Card.Text>
+            <Card.Title>Баня-бочка</Card.Title>
+            {/* <Card.Text>
               Описание Баня-бочка 3
-            </Card.Text>
-            <Button data-id={1} onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
+            </Card.Text> */}
+            <BarrelCircleForm />
+            {/* <Button data-id={1} onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button> */}
           </Card.Body>
         </Card>
-        <Card className='card-box__cards'>
+        <Card className='card-box__cards' border='info'>
           <Card.Img variant="top" src={price_card_1} />
           <Card.Body>
-            <Card.Title>Баня-бочка 2</Card.Title>
-            <Card.Text>
+            <Card.Title>Баня-бочка Квадро</Card.Title>
+            {/* <Card.Text>
               Описание Баня-бочка 2
-            </Card.Text>
-            <Button data-id={2} onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
+            </Card.Text> */}
+            <BarrelSquareForm />
+            {/* <Button data-id={2} onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button> */}
           </Card.Body>
         </Card>
-        <Card className='card-box__cards'>
+        {/* <Card className='card-box__cards'>
           <Card.Img variant="top" src={price_card_1} />
           <Card.Body>
             <Card.Title>Баня-бочка 3</Card.Title>
@@ -57,8 +63,8 @@ class CardsBox extends Component<ICardsBoxProps> {
             </Card.Text>
             <Button data-id={3} onClick={this.openOrderForm.bind(this)} variant="primary">Купить</Button>
           </Card.Body>
-        </Card>
-        <Card className='card-box__cards'>
+        </Card> */}
+        {/* <Card className='card-box__cards'>
           <Card.Img variant="top" src={price_card_1} />
           <Card.Body>
             <Card.Title>Не определились с выбором?</Card.Title>
@@ -66,6 +72,14 @@ class CardsBox extends Component<ICardsBoxProps> {
               Закажите обратный звонок и мы поможем Вам!
             </Card.Text>
             <Button onClick={this.openCallForm.bind(this)} variant="primary">Заказать</Button>
+          </Card.Body>
+        </Card> */}
+        <Card className='card-box__cards' border='info'>
+          {/* <Card.Header className='home__text'>Закажите звонок прямо сейчас и мы ответим на все ваши вопросы!</Card.Header> */}
+          <Card.Img variant="top" src={callImg} />
+          <Card.Body>
+          <Card.Title >Закажите звонок прямо сейчас и мы ответим на все ваши вопросы!</Card.Title>
+            <FormCall />
           </Card.Body>
         </Card>
       </div >

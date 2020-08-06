@@ -1,0 +1,31 @@
+.barrel-circle-form {
+  &__group-options {
+    display: flex;
+    justify-content: start;
+  }
+
+  &__price {
+    font-size: 24px;
+    color: red;
+    font-weight: bold;
+    transition: font-size 0.2s;
+    height: 30px;
+  }
+
+  &__price-big {
+    font-size: 26px;
+  }
+  &__dropdown-container{
+    padding: .5em 0 .5em 0;
+  }
+
+  &__dropdown-container button {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    width: 100%;
+  }
+
+  &__options{
+    margin: 0 .5em 0 .5em;
+  }
+}

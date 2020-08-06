@@ -3,13 +3,11 @@ import './App.scss';
 import Home from './pages/Home/Home';
 import Gallery from './pages/Gallery/Gallery';
 import Price from './pages/Price/Price';
-import NavBar from './components/NavBar/NavBar';
 import {
   Route,
   Router
 } from "react-router-dom";
 import { createBrowserHistory } from 'history';
-import Switch from 'react-bootstrap/esm/Switch';
 
 
 
@@ -23,8 +21,8 @@ export default class App extends Component {
           <Router history={history}>
             {/* <Switch> */}
             <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
-            <Route exact path={`${process.env.PUBLIC_URL}/price`} component={Price} />
-            <Route exact path={`${process.env.PUBLIC_URL}/gallery`} component={Gallery} />
+            {/* <Route exact path={`${process.env.PUBLIC_URL}/price`} component={Price} />
+            <Route exact path={`${process.env.PUBLIC_URL}/gallery`} component={Gallery} /> */}
             {/* </Switch> */}
           </Router>
         </div>
