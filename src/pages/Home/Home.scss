@@ -1,34 +1,22 @@
 .home {
-  // background-color: blue;
-
   &__content {
-  //   // position: absolute;
-  //   top: 6em;
-  //   width: 100%;
-  //   height: 100%;
-  //   display: flex;
-  //   justify-content: space-around;
-  //   align-items: flex-start;
-  //   flex-wrap: wrap;
-
-    & > *{
+    & > * {
       margin-bottom: 1em;
     }
   }
 
-  &__present{
+  &__present {
     max-height: 650px;
     overflow: hidden;
   }
 
   &__text {
-    // color: #fff;
     font-size: 1.1rem;
   }
 
-  // @media(max-width: 700px){
-  //   &__content {
-  //     position: absolute;
-  //   }
-  // }
+  @media (min-width: 990px) {
+    &__caption {
+      display: none;
+    }
+  }
 }

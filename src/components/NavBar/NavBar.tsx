@@ -11,7 +11,7 @@ export default class NavBar extends Component {
         <Navbar collapseOnSelect fixed='top' expand="sm" bg="dark" variant='dark'>
           {/* <NavLink onClickCapture={this.scrollUp.bind(this)} className='navbar__links' to={`${process.env.PUBLIC_URL}/`}>Label</NavLink> */}
           <Navbar.Brand href="#home">
-            <NavLink onClickCapture={this.scrollUp.bind(this)} className='navbar__links' to={`${process.env.PUBLIC_URL}/`}>
+            {/* <NavLink onClickCapture={this.scrollUp.bind(this)} className='navbar__links' to={`${process.env.PUBLIC_URL}/`}> */}
               <img
                 src={label}
                 width="30"
@@ -19,7 +19,7 @@ export default class NavBar extends Component {
                 className="d-inline-block align-top navbar__logo"
                 alt="logo"
               />
-            </NavLink>
+            {/* </NavLink> */}
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">

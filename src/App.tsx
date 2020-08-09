@@ -18,13 +18,14 @@ export default class App extends Component {
     return (
       <div>
         <div className='App'>
-          <Router history={history}>
+          {/* <Router history={history}> */}
             {/* <Switch> */}
-            <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} />
+            {/* <Route exact path={`${process.env.PUBLIC_URL}/`} component={Home} /> */}
+            <Home/>
             {/* <Route exact path={`${process.env.PUBLIC_URL}/price`} component={Price} />
             <Route exact path={`${process.env.PUBLIC_URL}/gallery`} component={Gallery} /> */}
             {/* </Switch> */}
-          </Router>
+          {/* </Router> */}
         </div>
       </div>
     )

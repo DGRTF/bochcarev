@@ -7,12 +7,12 @@ export default class FormCall extends Component {
   render() {
     return (
       <div className='form-call'>
-        <Form>
+        <Form action='FormCall.php' method='post'>
           <Form.Group controlId="formBasicEmail">
-            <Form.Control type="text" placeholder="Ваше имя" />
+            <Form.Control type="text" name='name' placeholder="Ваше имя" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Control type="tel" placeholder="Номер телефона" />
+            <Form.Control type="tel" name='tel' placeholder="Номер телефона" />
           </Form.Group>
           <Button variant="primary" type="submit">
             Заказать звонок

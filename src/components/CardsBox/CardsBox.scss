@@ -7,6 +7,11 @@
     margin: 1.2em;
   }
 
+  &__carousel{
+    border-radius: 4px 4px 0 0;
+    overflow: hidden;
+  }
+
   &__cards {
     min-width: 18rem;
     width: 20rem;

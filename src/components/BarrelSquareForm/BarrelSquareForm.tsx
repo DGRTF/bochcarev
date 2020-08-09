@@ -29,22 +29,22 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
   render() {
     return (
       <div>
-        <Form>
+        <Form action='BarrelSquareForm.php' method='post'>
           <Form.Group className='barrel-square-form__group-options' controlId="formBasicPrice">
             <div className={`barrel-square-form__price ${this.state.classPriceCSS}`}>{`${this.state.price} ₽`}</div>
           </Form.Group>
           <div className='barrel-square-form__dropdown-container' >
             <DropdownButton variant='wite' id="dropdown-basic-button" title="Опции">
-              <Form.Check className='barrel-square-form__options' onClick={this.changePriceCircle20sm.bind(this)} type="checkbox" label="Увеличение круга на 20см" />
-              <Form.Check className='barrel-square-form__options' onClick={this.changePriceVisor.bind(this)} type="checkbox" label="Козырек" />
-              <Form.Check className='barrel-square-form__options' onClick={this.changePriceSideEntrance.bind(this)} type="checkbox" label="Боковой вход" />
-              <Form.Check className='barrel-square-form__options' onClick={this.changePriceFoundation.bind(this)} type="checkbox" label="Свайный фундамент" />
-              <Form.Check className='barrel-square-form__options' onClick={this.changePriceSteps.bind(this)} type="checkbox" label="Ступени" />
+              <Form.Check name='circle-20' className='barrel-square-form__options' onClick={this.changePriceCircle20sm.bind(this)} type="checkbox" label="Увеличение круга на 20см" />
+              <Form.Check name='visor' className='barrel-square-form__options' onClick={this.changePriceVisor.bind(this)} type="checkbox" label="Козырек" />
+              <Form.Check name='entrance' className='barrel-square-form__options' onClick={this.changePriceSideEntrance.bind(this)} type="checkbox" label="Боковой вход" />
+              <Form.Check name='foundation' className='barrel-square-form__options' onClick={this.changePriceFoundation.bind(this)} type="checkbox" label="Свайный фундамент" />
+              <Form.Check name='step' className='barrel-square-form__options' onClick={this.changePriceSteps.bind(this)} type="checkbox" label="Ступени" />
             </DropdownButton>
           </div>
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Длинна</Form.Label>
-            <Form.Control onChange={this.selectPrice.bind(this)} as="select">
+            <Form.Control name='length' onChange={this.selectPrice.bind(this)} as="select">
               <option>2м</option>
               <option>3м</option>
               <option>3.5м</option>
@@ -56,10 +56,10 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
             </Form.Control>
           </Form.Group>
           <Form.Group controlId="formBasicName">
-            <Form.Control type="text" placeholder="Ваше имя" />
+            <Form.Control name='name' type="text" placeholder="Ваше имя" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Control type="tel" placeholder="Номер телефона" />
+            <Form.Control required name='tel' type="tel" placeholder="Номер телефона" />
           </Form.Group>
           <Form.Control type="hidden" name='id' value={1} />
           <Button variant="primary" type="submit">
@@ -76,8 +76,6 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
     this.length = selectedOption.text;
     this.changePrice(selectedOption.text);
     this.updatePriceFoundationByLength();
-    console.warn(this.state.price);
-    console.warn(selectedOption.text);
   }
 
   private changePrice(value: string) {
@@ -104,25 +102,16 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
   }
 
   private changePriceSetState(priceSelect: number) {
-    console.warn(priceSelect);
-    console.warn(this.previousPriceSelect);
-    console.warn(this.state.price);
 
     this.setState(state => {
-      console.warn(state.price - this.previousPriceSelect + priceSelect);
-      console.warn(this.previousPriceSelect);
       const previousPriceSelect = this.previousPriceSelect;
-      console.warn(priceSelect);
       this.previousPriceSelect = priceSelect;
-      console.warn((state.price - previousPriceSelect + priceSelect));
       return {
         price: state.price - previousPriceSelect + priceSelect,
         classPriceCSS: 'barrel-square-form__price-big',
       }
     }
     );
-
-    console.warn(this.state.price);
 
     setTimeout(() =>
       this.setState({
@@ -149,22 +138,13 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
     if (this.checkFoundation) {
       if (this.checkFoundation.checked) {
         const priceByLength = this.calculatePriceFoundationByLength(this.length);
-        // console.warn(priceByLength);
-        // console.warn(this.state.price);
-        // console.warn(this.previousCheckFoundationPrice);
         this.setState(state => {
-          console.warn(priceByLength);
-          console.warn(this.state.price);
-          console.warn(this.previousCheckFoundationPrice);
-          console.warn(state.price - this.previousCheckFoundationPrice + priceByLength);
           const statePrice=state.price - this.previousCheckFoundationPrice + priceByLength;
           this.previousCheckFoundationPrice = priceByLength;
           return {
             price: statePrice,
           }
         });
-        // this.previousCheckFoundationPrice = priceByLength;
-        // console.warn(this.previousCheckFoundationPrice);
       }
     }
   }
