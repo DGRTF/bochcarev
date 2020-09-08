@@ -23,6 +23,9 @@ import barrelCircleImg5 from '../../assets/BarrelCircle/IMG-20200723-WA0108.jpg'
 import barrelCircleImg6 from '../../assets/BarrelCircle/IMG-20200723-WA0129.jpg';
 import barrelCircleImg7 from '../../assets/BarrelCircle/IMG-20200723-WA0181.jpg';
 import barrelCircleImg8 from '../../assets/BarrelCircle/IMG-20200723-WA0177.jpg';
+import quatro1 from '../../assets/BarrelQuatro/quatro1.jpeg';
+import quatro2 from '../../assets/BarrelQuatro/quatro2.jpg';
+import quatro3 from '../../assets/BarrelQuatro/quatro3.png';
 
 
 
@@ -49,57 +52,49 @@ class CardsBox extends Component<ICardsBoxProps> {
               <img
                 className='d-block w-100'
                 src={barrelCircleImg1}
-                alt='First slide'
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg2}
-                alt='First slide'
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg3}
-                alt='First slide'
               />
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg4}
-                alt='First slide'
               />
             </Carousel.Item><Carousel.Item>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg5}
-                alt='First slide'
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg6}
-                alt='First slide'
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg7}
-                alt='First slide'
               />
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg8}
-                alt='First slide'
               />
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
           <Card.Body>
             <Card.Title>Баня-бочка</Card.Title>
@@ -107,7 +102,26 @@ class CardsBox extends Component<ICardsBoxProps> {
           </Card.Body>
         </Card>
         <Card className='card-box__cards' border='info'>
-          <Card.Img variant="top" src={price_card_1} />
+        <Carousel className='card-box__carousel' interval={2500}>
+            <Carousel.Item>
+              <img
+                className='d-block w-100'
+                src={quatro1}
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className='d-block w-100'
+                src={quatro2}
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className='d-block w-100'
+                src={quatro3}
+              />
+            </Carousel.Item>
+          </Carousel>
           <Card.Body>
             <Card.Title>Баня-бочка Квадро</Card.Title>
             <BarrelSquareForm />

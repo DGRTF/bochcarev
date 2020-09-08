@@ -6,6 +6,7 @@ import { Carousel } from 'react-bootstrap';
 import qualityImg from '../../assets/pexels-tirachard-kumtanom-733854.jpg';
 import priceImg from '../../assets/pexels-jonathan-borba-3689188.jpg';
 import bestTeamImg from '../../assets/pexels-jeshootscom-834892.jpg';
+import welcomeImage from '../../assets/welcomeImage.jpg';
 
 export default class Home extends Component {
   render() {
@@ -13,18 +14,23 @@ export default class Home extends Component {
       <div className='home'>
         <NavBar />
         <div className='home__content'>
-          <Carousel className='home__present'> 
+          <Carousel
+            className='home__present'
+            controls={false}
+            indicators={false}
+            interval={null}
+          >
             <Carousel.Item>
               <img
                 className='d-block w-100'
-                src={qualityImg}
+                src={welcomeImage}
                 alt='First slide'
               />
-              <Carousel.Caption className='home__caption'>
+              {/* <Carousel.Caption className='home__caption'>
                 <h4>Лучшее качество</h4>
-              </Carousel.Caption>
+              </Carousel.Caption> */}
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <img
                 className='d-block w-100'
                 src={priceImg}
@@ -43,10 +49,15 @@ export default class Home extends Component {
               <Carousel.Caption className='home__caption'>
                 <h4>Команда профессионалов</h4>
               </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         </div>
         <CardsBox />
+        <div className='home__welcome'>
+          <div className='home__welcome-text'>
+            Получите баню бочку под ключ уже через 9 дней от частного мастера
+            </div>
+        </div>
       </div>
     )
   }

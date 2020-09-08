@@ -43,7 +43,7 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
             </DropdownButton>
           </div>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>Длинна</Form.Label>
+            <Form.Label>Длина</Form.Label>
             <Form.Control name='length' onChange={this.selectPrice.bind(this)} as="select">
               <option>2м</option>
               <option>3м</option>

@@ -14,9 +14,59 @@
     font-size: 1.1rem;
   }
 
-  @media (min-width: 990px) {
-    &__caption {
-      display: none;
+  &__welcome {
+    position: absolute;
+    top: 3em;
+    font-size: 50px;
+    width: 100%;
+    color: #fff;
+
+    &-text {
+      margin: auto;
+      width: 60%;
+      text-shadow: black 1.5px 1.5px 0, black -1.5px 1.5px 0, black 1.5px -1.5px 0, black -1.5px -1.5px 0;
+    }
+  }
+
+  @media (max-width: 800px) {
+    &__welcome {
+      font-size: 45px;
+    }
+  }
+
+  @media (max-width: 700px) {
+    &__welcome {
+      font-size: 40px;
+      &-text {
+        width: 75%;
+      }
+    }
+  }
+
+  @media (max-width: 550px) {
+    &__welcome {
+      font-size: 35px;
+      &-text {
+        width: 75%;
+      }
+    }
+  }
+
+  @media (max-width: 450px) {
+    &__welcome {
+      font-size: 30px;
+      &-text {
+        width: 80%;
+      }
+    }
+  }
+
+  @media (max-width: 400px) {
+    &__welcome {
+      font-size: 25px;
+      &-text {
+        width: 70%;
+      }
     }
   }
 }

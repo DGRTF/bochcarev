@@ -29,8 +29,8 @@ export default class NavBar extends Component {
             </Nav>
           </Navbar.Collapse>
           {/* <Navbar.Collapse className="justify-content-end"> */}
-          <Navbar.Text>
-            Номер телефона
+          <Navbar.Text className='navbar__phone-number'>
+            <a href="tel:+79211822238">+7 (921) 182-22-38</a>
             </Navbar.Text>
           {/* </Navbar.Collapse> */}
           {/* <Navbar.Toggle aria-controls="responsive-navbar-nav" /> */}
