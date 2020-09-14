@@ -28,6 +28,18 @@
     }
   }
 
+  &__footer{
+    background-color: #343a40;
+    height: 50px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text-container{
+  }
+
   @media (max-width: 800px) {
     &__welcome {
       font-size: 45px;

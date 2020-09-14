@@ -55,8 +55,15 @@ export default class Home extends Component {
         <CardsBox />
         <div className='home__welcome'>
           <div className='home__welcome-text'>
-            Получите баню бочку под ключ уже через 9 дней от частного мастера
-            </div>
+            Сделай заказ сегодня и получи баню уже через 7 дней! Доставка в подарок!
+          </div>
+        </div>
+        <div className='home__footer'>
+          <div className='home__text-container'>
+            <span>
+              Контакты: Гатчинский район, п. Куровицы, Вырицкое шоссе, строение 21
+            </span>
+          </div>
         </div>
       </div>
     )
