@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Navbar, Nav } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import './NavBar.scss';
-import label from '../../assets/logotype.png';
+import label from '../../assets/label.jpeg';
 
 export default class NavBar extends Component {
   render() {
@@ -14,9 +14,9 @@ export default class NavBar extends Component {
             {/* <NavLink onClickCapture={this.scrollUp.bind(this)} className='navbar__links' to={`${process.env.PUBLIC_URL}/`}> */}
               <img
                 src={label}
-                width="30"
-                height="30"
-                className="d-inline-block align-top navbar__logo"
+                // max-width="30"
+                height="35px"
+                className="d-inline-block align-top "
                 alt="logo"
               />
             {/* </NavLink> */}
