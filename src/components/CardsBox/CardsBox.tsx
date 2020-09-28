@@ -4,7 +4,6 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { Card, Carousel } from 'react-bootstrap'
 import './CardsBox.scss';
-import price_card_1 from '../../assets/price_card_1.jpg';
 import {
   openOrderForm,
   openCallForm,
@@ -17,15 +16,16 @@ import callImg from '../../assets/pexels-andrea-piacquadio-789822.jpg';
 
 import barrelCircleImg1 from '../../assets/BarrelCircle/IMG-20200723-WA0049.jpg';
 import barrelCircleImg2 from '../../assets/BarrelCircle/IMG-20200723-WA0078.jpg';
-import barrelCircleImg3 from '../../assets/BarrelCircle/IMG-20200723-WA0102.jpg';
 import barrelCircleImg4 from '../../assets/BarrelCircle/IMG-20200723-WA0120.jpg';
 import barrelCircleImg5 from '../../assets/BarrelCircle/IMG-20200723-WA0108.jpg';
 import barrelCircleImg6 from '../../assets/BarrelCircle/IMG-20200723-WA0129.jpg';
 import barrelCircleImg7 from '../../assets/BarrelCircle/IMG-20200723-WA0181.jpg';
-import barrelCircleImg8 from '../../assets/BarrelCircle/IMG-20200723-WA0177.jpg';
 import quatro1 from '../../assets/BarrelQuatro/quatro1.jpeg';
 import quatro2 from '../../assets/BarrelQuatro/quatro2.jpg';
-import quatro3 from '../../assets/BarrelQuatro/quatro3.png';
+import quatro4 from '../../assets/BarrelQuatro/quatro4.jpg';
+import quatro5 from '../../assets/BarrelQuatro/quatro5.jpg';
+import quatro6 from '../../assets/BarrelQuatro/quatro6.jpg';
+
 
 
 
@@ -63,12 +63,6 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Carousel.Item>
               <img
                 className='d-block w-100'
-                src={barrelCircleImg3}
-              />
-            </Carousel.Item>
-            {/* <Carousel.Item>
-              <img
-                className='d-block w-100'
                 src={barrelCircleImg4}
               />
             </Carousel.Item><Carousel.Item>
@@ -89,12 +83,6 @@ class CardsBox extends Component<ICardsBoxProps> {
                 src={barrelCircleImg7}
               />
             </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className='d-block w-100'
-                src={barrelCircleImg8}
-              />
-            </Carousel.Item> */}
           </Carousel>
           <Card.Body>
             <Card.Title>Баня-бочка</Card.Title>
@@ -118,7 +106,19 @@ class CardsBox extends Component<ICardsBoxProps> {
             <Carousel.Item>
               <img
                 className='d-block w-100'
-                src={quatro3}
+                src={quatro4}
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className='d-block w-100'
+                src={quatro5}
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className='d-block w-100'
+                src={quatro6}
               />
             </Carousel.Item>
           </Carousel>
