@@ -25,8 +25,4 @@ export default class NavBar extends Component {
       </div>
     )
   }
-
-  private scrollUp() {
-    window.scrollTo(null, 0);
-  }
 }
