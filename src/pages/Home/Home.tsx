@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component, Suspense } from 'react'
 import './Home.scss';
-import CardsBox from '../../components/CardsBox/CardsBox';
 import NavBar from '../../components/NavBar/NavBar';
 import welcomeImage from '../../assets/welcomeImage.jpg';
+const Footer = React.lazy(() => import( '../../components/Footer/Footer'));
+const CardsBox = React.lazy(() => import('../../components/CardsBox/CardsBox'));
 
 export default class Home extends Component {
   render() {
@@ -14,17 +15,13 @@ export default class Home extends Component {
           src={welcomeImage}
           alt='First slide'
         />
-        <CardsBox />
+        <Suspense fallback={<div>Loading...</div>}>
+          <CardsBox />
+          <Footer />
+        </Suspense>
         <div className='home__welcome'>
           <div className='home__welcome-text'>
             Сделай заказ сегодня и получи баню уже через 7 дней! Доставка в подарок!
-          </div>
-        </div>
-        <div className='home__footer'>
-          <div className='home__text-container'>
-            <span>
-              Контакты: Гатчинский район, п. Куровицы, Вырицкое шоссе, строение 21
-            </span>
           </div>
         </div>
       </div>
