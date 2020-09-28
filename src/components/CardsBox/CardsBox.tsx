@@ -137,19 +137,6 @@ class CardsBox extends Component<ICardsBoxProps> {
       </div >
     )
   }
-
-  private openOrderForm(ev: React.MouseEvent) {
-    this.props.openOrderForm();
-    const el = ev.currentTarget as HTMLElement;
-    const id = Number(el.dataset.id);
-    this.props.setIdBarrel(id);
-    window.scrollTo(null, 0);
-  }
-
-  private openCallForm() {
-    this.props.openCallForm();
-    window.scrollTo(null, 0);
-  }
 }
 
 function mapDispatchToProps(dispatch: any) {

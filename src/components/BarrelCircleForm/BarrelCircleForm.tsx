@@ -102,25 +102,16 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
   }
 
   private changePriceSetState(priceSelect: number) {
-    // console.warn(priceSelect);
-    // console.warn(this.previousPriceSelect);
-    // console.warn(this.state.price);
 
     this.setState(state => {
-      // console.warn(state.price - this.previousPriceSelect + priceSelect);
-      // console.warn(this.previousPriceSelect);
       const previousPriceSelect = this.previousPriceSelect;
-      // console.warn(priceSelect);
       this.previousPriceSelect = priceSelect;
-      // console.warn((state.price - previousPriceSelect + priceSelect));
       return {
         price: state.price - previousPriceSelect + priceSelect,
         classPriceCSS: 'barrel-circle-form__price-big',
       }
     }
     );
-
-    // console.warn(this.state.price);
 
     setTimeout(() =>
       this.setState({
@@ -147,19 +138,13 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
     if (this.checkFoundation) {
       if (this.checkFoundation.checked) {
         const priceByLength = this.calculatePriceFoundationByLength(this.length);
-        // console.warn(priceByLength);
-        // console.warn(this.state.price);
-        // console.warn(this.previousCheckFoundationPrice);
         this.setState(state => {
-          // console.warn(priceByLength); name='circle-20'ndationPrice + priceByLength);
           const statePrice=state.price - this.previousCheckFoundationPrice + priceByLength;
           this.previousCheckFoundationPrice = priceByLength;
           return {
             price: statePrice,
           }
         });
-        // this.previousCheckFoundationPrice = priceByLength;
-        // console.warn(this.previousCheckFoundationPrice);
       }
     }
   }
