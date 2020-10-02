@@ -27,23 +27,19 @@ $step=$_POST['step'];
 
 $price = 129000;
 
-// Проверяем валидность e-mail 
- 
-// if (!preg_match("|^([a-z0-9_\.\-]{1,20})@([a-z0-9\.\-]{1,20})\.([a-z]{2,4})|is", 
-// strtolower($tel))) 
- 
-//  { 
- 
-//   echo 
-// "<center>Вернитесь <a 
-// href='javascript:history.back(1)'><B>назад</B></a>. Вы 
-// указали неверные данные!"; 
- 
-//   } 
- 
-//  else 
- 
-//  { 
+$street_light=$_POST['street-light'];
+
+$firebox_outside=$_POST['firebox-outside'];
+
+$window=$_POST['window'];
+
+$backs=$_POST['backs'];
+
+$step_polog=$_POST['step-polog'];
+
+$shelf=$_POST['shelf'];
+
+$woodshed=$_POST['woodshed'];
  
  
 $msg=" 
@@ -117,6 +113,55 @@ if($step){
   Лестница";
 
   $price+=2900;
+}
+
+if($street_light){
+  $msg.="
+  Уличный светильник";
+
+  $price+=990;
+}
+
+if($firebox_outside){
+  $msg.="
+  Вынос топки наружу";
+
+  $price+=11900;
+}
+
+if($window){
+  $msg.="
+  Доп. окно 30х30/40х40";
+
+  $price+=3900;
+}
+
+if($backs){
+  $msg.="
+  Спинки в парную(осина)";
+
+  $price+=4900;
+}
+
+if($step_polog){
+  $msg.="
+  Ступенька для полога";
+
+  $price+=2500;
+}
+
+if($shelf){
+  $msg.="
+  Полочка для банных средств";
+
+  $price+=990;
+}
+
+if($woodshed){
+  $msg.="
+  Дровяник";
+
+  $price+=3900;
 }
 
 $msg.="
