@@ -40,6 +40,13 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
               <Form.Check name='entrance' className='barrel-circle-form__options' onClick={this.changePriceSideEntrance.bind(this)} type="checkbox" label="Боковой вход" />
               <Form.Check name='foundation' className='barrel-circle-form__options' onClick={this.changePriceFoundation.bind(this)} type="checkbox" label="Свайный фундамент" />
               <Form.Check name='step' className='barrel-circle-form__options' onClick={this.changePriceSteps.bind(this)} type="checkbox" label="Ступени" />
+              <Form.Check name='street-light' className='barrel-circle-form__options' onClick={this.changePriceLight.bind(this)} type="checkbox" label="Уличный светильник" />
+              <Form.Check name='firebox-outside' className='barrel-circle-form__options' onClick={this.changePriceFireboxOutside.bind(this)} type="checkbox" label="Вынос топки наружу" />
+              <Form.Check name='window' className='barrel-circle-form__options' onClick={this.changePriceWindow.bind(this)} type="checkbox" label="Доп. окно 30х30/40х40" />
+              <Form.Check name='backs' className='barrel-circle-form__options' onClick={this.changePriceBacks.bind(this)} type="checkbox" label="Спинки в парную(осина)" />
+              <Form.Check name='step-polog' className='barrel-circle-form__options' onClick={this.changePriceStepPolog.bind(this)} type="checkbox" label="Ступенька для полога" />
+              <Form.Check name='shelf' className='barrel-circle-form__options' onClick={this.changePriceShelf.bind(this)} type="checkbox" label="Полочка для банных средств 50х15" />
+              <Form.Check name='woodshed' className='barrel-circle-form__options' onClick={this.changePriceWoodshed.bind(this)} type="checkbox" label="Дровяник" />
             </DropdownButton>
           </div>
           <Form.Group controlId="formBasicEmail">
@@ -134,6 +141,46 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
     this.changePriceOptions(check, 14000);
   }
 
+  private changePriceSteps(event: React.MouseEvent) {
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 2900);
+  }
+
+  private changePriceLight(event: React.MouseEvent){
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 990);
+  }
+
+  private changePriceFireboxOutside(event: React.MouseEvent) {
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 11900);
+  }
+
+  private changePriceWindow(event: React.MouseEvent) {
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 3900);
+  }
+
+  private changePriceBacks(event: React.MouseEvent) {
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 4900);
+  }
+
+  private changePriceStepPolog(event: React.MouseEvent) {
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 2500);
+  }
+
+  private changePriceShelf(event: React.MouseEvent) {
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 990);
+  }
+
+  private changePriceWoodshed(event: React.MouseEvent) {
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 3900);
+  }
+
   private updatePriceFoundationByLength() {
     if (this.checkFoundation) {
       if (this.checkFoundation.checked) {
@@ -176,11 +223,6 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
       default:
         return 0
     }
-  }
-
-  private changePriceSteps(event: React.MouseEvent) {
-    const check = event.currentTarget as HTMLFormElement;
-    this.changePriceOptions(check, 2900);
   }
 
   private changePriceOptions(check: HTMLFormElement, changePrice: number) {
