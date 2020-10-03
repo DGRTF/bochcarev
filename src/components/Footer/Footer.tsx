@@ -7,7 +7,7 @@ export default class Footer extends Component {
       <footer className='footer'>
         <div className='footer__text-container'>
           <span>
-            Контакты: Гатчинский район, п. Куровицы, Вырицкое шоссе, строение 21
+            Контакты: Гатчинский р-н д. Воскресенское ул. Центральная 122
           </span>
         </div>
       </footer>
