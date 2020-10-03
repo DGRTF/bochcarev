@@ -12,7 +12,7 @@ export default class FormCall extends Component {
             <Form.Control type="text" name='name' placeholder="Ваше имя" />
           </Form.Group>
           <Form.Group controlId="formBasicPassword">
-            <Form.Control type="tel" name='tel' placeholder="Номер телефона" />
+            <Form.Control required type="tel" name='tel' placeholder="Номер телефона" />
           </Form.Group>
           <Button variant="primary" type="submit">
             Заказать звонок
