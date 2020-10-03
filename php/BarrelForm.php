@@ -1,4 +1,4 @@
-<?
+<?  
 $adminemail="stolyar_art@mail.ru";  // e-mail админа 
  
 $date=date("d.m.y"); // число.месяц.год 
@@ -9,9 +9,11 @@ $backurl="http://бочкарёф.рф/index.html";  // На какую стра
  
 // Принимаем данные с формы 
  
-$name=$_POST['name'];
+$id=$_POST['id']; 
+
+$name=$_POST['name']; 
  
-$tel=$_POST['tel'];
+$tel=$_POST['tel']; 
 
 $length=$_POST['length'];
 
@@ -24,8 +26,6 @@ $entrance=$_POST['entrance'];
 $foundation=$_POST['foundation'];
 
 $step=$_POST['step'];
-
-$price = 129000;
 
 $street_light=$_POST['street-light'];
 
@@ -41,14 +41,28 @@ $shelf=$_POST['shelf'];
 
 $woodshed=$_POST['woodshed'];
  
+$price;
+
+$type;
+
+
+
+if($id==1){
+  $type = 'круглая';
+  $price = 119000;
+}else{
+  $type = 'квадро';
+  $price = 129000;
+}
+ 
  
 $msg=" 
  
-Заказ Бани-бочки Квадро 
+Заказ Бани-бочки (круглая) 
  
  
-Имя заказчика: $name
-Телефон: $tel
+Имя заказчика: $name  
+Телефон: $tel 
  
 Длина: $length
 
@@ -168,14 +182,15 @@ $msg.="
   Цена: $price р";
 
  
- // Отправляем письмо админу
+ // Отправляем письмо админу  
  
-mail("$adminemail", "Заказ бани-бочки Квадро $date $time", "$msg");
+
+mail("$adminemail", "Заказ бани-бочки ($type) $date $time", "$msg");
  
 // Выводим сообщение пользователю 
  
 print "<script language='Javascript'><!-- 
-function reload() {location = \"$backurl\"}; setTimeout('reload()', 6000); 
+function reload() {location = \"$backurl\"}; 
 //--></script> 
  
 $msg 

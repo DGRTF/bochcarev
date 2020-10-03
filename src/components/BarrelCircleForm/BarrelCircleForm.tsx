@@ -29,7 +29,7 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
   render() {
     return (
       <div>
-        <Form action='BarrelCircleForm.php' method='post'>
+        <Form onSubmit={this.submitForm.bind(this)} action='BarrelForm.php' method='post'>
           <Form.Group className='barrel-circle-form__group-options' controlId="formBasicPrice">
             <div className={`barrel-circle-form__price ${this.state.classPriceCSS}`}>{`${this.state.price} ₽`}</div>
           </Form.Group>
@@ -75,6 +75,20 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
         </Form>
       </div>
     )
+  }
+
+  private submitForm(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget as HTMLFormElement;
+    const response = fetch('BarrelForm.php', {
+      method: 'POST',
+      body: new FormData(form)
+    }).then(() => {
+      alert('С вами свяжутся в скором времени. Ваша заявка в обработке.');
+    },
+      () => {
+        alert('Что-то пошло не так :(, попробуйте отправить заявку ещё раз');
+      });
   }
 
   private selectPrice(event: React.ChangeEvent) {
@@ -146,7 +160,7 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
     this.changePriceOptions(check, 2900);
   }
 
-  private changePriceLight(event: React.MouseEvent){
+  private changePriceLight(event: React.MouseEvent) {
     const check = event.currentTarget as HTMLFormElement;
     this.changePriceOptions(check, 990);
   }
@@ -186,7 +200,7 @@ export default class BarrelCircleForm extends Component<IBarrelCircleFormProps, 
       if (this.checkFoundation.checked) {
         const priceByLength = this.calculatePriceFoundationByLength(this.length);
         this.setState(state => {
-          const statePrice=state.price - this.previousCheckFoundationPrice + priceByLength;
+          const statePrice = state.price - this.previousCheckFoundationPrice + priceByLength;
           this.previousCheckFoundationPrice = priceByLength;
           return {
             price: statePrice,

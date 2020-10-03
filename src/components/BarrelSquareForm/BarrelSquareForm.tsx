@@ -29,7 +29,7 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
   render() {
     return (
       <div>
-        <Form action='BarrelSquareForm.php' method='post'>
+        <Form onSubmit={this.submitForm.bind(this)} action='BarrelForm.php' method='post'>
           <Form.Group className='barrel-square-form__group-options' controlId="formBasicPrice">
             <div className={`barrel-square-form__price ${this.state.classPriceCSS}`}>{`${this.state.price} ₽`}</div>
           </Form.Group>
@@ -68,13 +68,27 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
           <Form.Group controlId="formBasicPassword">
             <Form.Control required name='tel' type="tel" placeholder="Номер телефона" />
           </Form.Group>
-          <Form.Control type="hidden" name='id' value={1} />
+          <Form.Control type="hidden" name='id' value={2} />
           <Button variant="primary" type="submit">
             Заказать
           </Button>
         </Form>
       </div>
     )
+  }
+
+  private submitForm(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget as HTMLFormElement;
+    const response = fetch('BarrelForm.php', {
+      method: 'POST',
+      body: new FormData(form)
+    }).then(() => {
+      alert('С вами свяжутся в скором времени. Ваша заявка в обработке.');
+    },
+      () => {
+        alert('Что-то пошло не так :(, попробуйте отправить заявку ещё раз');
+      });
   }
 
   private selectPrice(event: React.ChangeEvent) {
@@ -141,7 +155,12 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
     this.changePriceOptions(check, 14000);
   }
 
-  private changePriceLight(event: React.MouseEvent){
+  private changePriceSteps(event: React.MouseEvent) {
+    const check = event.currentTarget as HTMLFormElement;
+    this.changePriceOptions(check, 2900);
+  }
+
+  private changePriceLight(event: React.MouseEvent) {
     const check = event.currentTarget as HTMLFormElement;
     this.changePriceOptions(check, 990);
   }
@@ -181,7 +200,7 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
       if (this.checkFoundation.checked) {
         const priceByLength = this.calculatePriceFoundationByLength(this.length);
         this.setState(state => {
-          const statePrice=state.price - this.previousCheckFoundationPrice + priceByLength;
+          const statePrice = state.price - this.previousCheckFoundationPrice + priceByLength;
           this.previousCheckFoundationPrice = priceByLength;
           return {
             price: statePrice,
@@ -218,11 +237,6 @@ export default class BarrelSquareForm extends Component<IBarrelSquareFormProps, 
       default:
         return 0
     }
-  }
-
-  private changePriceSteps(event: React.MouseEvent) {
-    const check = event.currentTarget as HTMLFormElement;
-    this.changePriceOptions(check, 2900);
   }
 
   private changePriceOptions(check: HTMLFormElement, changePrice: number) {
