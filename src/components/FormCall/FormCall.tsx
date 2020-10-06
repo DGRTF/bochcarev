@@ -7,7 +7,7 @@ export default class FormCall extends Component {
   render() {
     return (
       <div className='form-call'>
-        <Form action='FormCall.php' method='post'>
+        <Form onSubmit={this.submitForm.bind(this)} action='FormCall.php' method='post'>
           <Form.Group controlId="formBasicEmail">
             <Form.Control type="text" name='name' placeholder="Ваше имя" />
           </Form.Group>
@@ -20,5 +20,19 @@ export default class FormCall extends Component {
         </Form>
       </div>
     )
+  }
+
+  private submitForm(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget as HTMLFormElement;
+    const response = fetch('FormCall.php', {
+      method: 'POST',
+      body: new FormData(form)
+    }).then(() => {
+      alert('С вами свяжутся в скором времени. Ваша заявка в обработке.');
+    },
+      () => {
+        alert('Что-то пошло не так :(, попробуйте отправить заявку ещё раз');
+      });
   }
 }
