@@ -54,13 +54,13 @@ mail("$adminemail", "$date $time Сообщение
  
 // Выводим сообщение пользователю 
  
-print "<script language='Javascript'><!-- 
-function reload() {location = \"$backurl\"}; setTimeout('reload()', 1); 
-//--></script> 
+// print "<script language='Javascript'><!-- 
+// function reload() {location = \"$backurl\"}; setTimeout('reload()', 1); 
+// //--></script> 
  
-$msg 
+// $msg 
  
-<p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";  
-exit; 
+// <p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";  
+// exit; 
  
 ?>

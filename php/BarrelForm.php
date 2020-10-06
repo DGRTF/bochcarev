@@ -189,13 +189,13 @@ mail("$adminemail", "Заказ бани-бочки ($type) $date $time", "$msg"
  
 // Выводим сообщение пользователю 
  
-print "<script language='Javascript'><!-- 
-function reload() {location = \"$backurl\"}; 
-//--></script> 
+// print "<script language='Javascript'><!-- 
+// function reload() {location = \"$backurl\"}; 
+// //--></script> 
  
-$msg 
+// $msg 
  
-<p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";  
-exit; 
+// <p>Сообщение отправлено! Подождите, сейчас вы будете перенаправлены на главную страницу...</p>";  
+// exit; 
 
 ?>
