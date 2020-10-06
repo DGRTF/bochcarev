@@ -1,7 +1,7 @@
 import React, { Component, Suspense } from 'react'
 import './Home.scss';
 import NavBar from '../../components/NavBar/NavBar';
-import welcomeImage from '../../assets/welcomeImage.jpg';
+import quatro4 from '../../assets/BarrelQuatro/quatro4.jpg';
 const Footer = React.lazy(() => import( '../../components/Footer/Footer'));
 const CardsBox = React.lazy(() => import('../../components/CardsBox/CardsBox'));
 
@@ -12,7 +12,7 @@ export default class Home extends Component {
         <NavBar />
         <img
           className='d-block w-100'
-          src={welcomeImage}
+          src={quatro4}
           alt='First slide'
         />
         <Suspense fallback={<div>Loading...</div>}>
