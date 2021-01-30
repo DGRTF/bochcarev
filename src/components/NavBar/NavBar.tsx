@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Navbar, Nav } from 'react-bootstrap'
+import React, { Component } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
 import label from '../../assets/label.jpeg';
 
 export default class NavBar extends Component {

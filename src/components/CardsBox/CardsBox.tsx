@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component , lazy} from 'react';
 import { StateType } from '../../store/store';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { Card, Carousel } from 'react-bootstrap'
+import { Card, Carousel } from 'react-bootstrap';
 import './CardsBox.scss';
 import {
   openOrderForm,
@@ -26,6 +26,7 @@ import quatro4 from '../../assets/BarrelQuatro/quatro4.jpg';
 import quatro5 from '../../assets/BarrelQuatro/quatro5.jpg';
 import quatro6 from '../../assets/BarrelQuatro/quatro6.jpg';
 
+const CarouselItem = lazy(() => import('../../exportDefaults/CarouselItemExportDefault'));
 
 
 
@@ -48,41 +49,41 @@ class CardsBox extends Component<ICardsBoxProps> {
       <div className='card-box'>
         <Card className='card-box__cards' border='info'>
           <Carousel className='card-box__carousel' interval={2500}>
-            <Carousel.Item>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg1}
               />
-            </Carousel.Item>
-            <Carousel.Item>
+            </CarouselItem>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg2}
               />
-            </Carousel.Item>
-            <Carousel.Item>
+            </CarouselItem>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg4}
               />
-            </Carousel.Item><Carousel.Item>
+            </CarouselItem><CarouselItem>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg5}
               />
-            </Carousel.Item>
-            <Carousel.Item>
+            </CarouselItem>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg6}
               />
-            </Carousel.Item>
-            <Carousel.Item>
+            </CarouselItem>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={barrelCircleImg7}
               />
-            </Carousel.Item>
+            </CarouselItem>
           </Carousel>
           <Card.Body>
             <Card.Title>Баня-бочка</Card.Title>
@@ -91,36 +92,36 @@ class CardsBox extends Component<ICardsBoxProps> {
         </Card>
         <Card className='card-box__cards' border='info'>
         <Carousel className='card-box__carousel' interval={2500}>
-            <Carousel.Item>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={quatro1}
               />
-            </Carousel.Item>
-            <Carousel.Item>
+            </CarouselItem>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={quatro2}
               />
-            </Carousel.Item>
-            <Carousel.Item>
+            </CarouselItem>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={quatro4}
               />
-            </Carousel.Item>
-            <Carousel.Item>
+            </CarouselItem>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={quatro5}
               />
-            </Carousel.Item>
-            <Carousel.Item>
+            </CarouselItem>
+            <CarouselItem>
               <img
                 className='d-block w-100'
                 src={quatro6}
               />
-            </Carousel.Item>
+            </CarouselItem>
           </Carousel>
           <Card.Body>
             <Card.Title>Баня-бочка Квадро</Card.Title>

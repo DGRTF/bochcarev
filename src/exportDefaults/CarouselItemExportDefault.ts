@@ -1,0 +1,1 @@
+export { CarouselItem as default } from 'react-bootstrap';
