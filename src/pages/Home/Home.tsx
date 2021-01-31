@@ -15,15 +15,15 @@ export default class Home extends Component {
           src={quatro4}
           alt='First slide'
         />
-        <Suspense fallback={<div>Loading...</div>}>
-          <CardsBox />
-          <Footer />
-        </Suspense>
         <div className='home__welcome'>
           <div className='home__welcome-text'>
             Сделай заказ сегодня и получи баню уже через 7 дней! Доставка в подарок!
           </div>
         </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <CardsBox />
+          <Footer />
+        </Suspense>
       </div>
     )
   }
