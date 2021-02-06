@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "build": "webpack --mode=production",
-    "deploy": "gh-pages -d public",
+    "deploy": "gh-pages -d dist",
     "flow": "flow"
   },
   "dependencies": {

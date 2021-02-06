@@ -13,7 +13,13 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         // loader:
         use: [
-          'ts-loader',
+          {
+            loader: 'ts-loader',
+            // options: {
+            //   outputPath: './',
+            //   publicPath: "./"
+            // },
+          }
           //  "babel-loader",
         ]
       },
@@ -27,7 +33,7 @@ module.exports = {
         options: {
           name: '[name].[ext]',
           outputPath: 'fonts',
-          publicPath: "./dist/fonts"
+          publicPath: "fonts/"
         }
       },
       {
@@ -39,7 +45,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'img',
-              publicPath: "dist/img/"
+              publicPath: "img/"
             }
           },
           {
@@ -93,7 +99,7 @@ module.exports = {
   resolve: { extensions: ["*", ".ts", ".tsx", '.js'] },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: "dist/",
+    publicPath: "",
     filename: "bundle.js"
   },
   devServer: {
@@ -105,8 +111,8 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template:  "./public/index.html",
+      template: "./public/index.html",
       favicon: "./public/favicon.ico"
-  }),
+    }),
   ]
 };

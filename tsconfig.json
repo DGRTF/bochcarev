@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "public/dist",
+    "outDir": "/",
     "target": "es3",
     "module": "es2020",
     "jsx": "react",
