@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import label from '../../assets/label.jpeg';
 
-export default class NavBar extends Component {
+import './Header.scss';
+
+export default class Header extends Component {
   render() {
     return (
-      <div className='navbar'>
+      <header className='header'>
         <Navbar collapseOnSelect fixed='top' expand="sm" bg="dark" variant='dark'>
           <Navbar.Brand href="#home">
               <img
@@ -18,11 +20,11 @@ export default class NavBar extends Component {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto"></Nav>
           </Navbar.Collapse>
-          <Navbar.Text className='navbar__phone-number'>
+          <Navbar.Text className='header__phone-number'>
             <a href="tel:+79211822238">+7 (921) 182-22-38</a>
             </Navbar.Text>
         </Navbar>
-      </div>
+      </header>
     )
   }
 }

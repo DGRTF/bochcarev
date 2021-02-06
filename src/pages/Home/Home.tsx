@@ -1,6 +1,6 @@
 import React, { Component, Suspense } from 'react'
 import './Home.scss';
-import NavBar from '../../components/NavBar/NavBar';
+import Header from '../../components/Header/Header';
 import quatro4 from '../../assets/BarrelQuatro/quatro4.jpg';
 const Footer = React.lazy(() => import( '../../components/Footer/Footer'));
 const CardsBox = React.lazy(() => import('../../components/CardsBox/CardsBox'));
@@ -9,7 +9,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className='home'>
-        <NavBar />
+        <Header />
         <img
           className='d-block w-100'
           src={quatro4}

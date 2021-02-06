@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   target: ['web', 'es5'],
@@ -38,7 +39,7 @@ module.exports = {
             options: {
               name: '[name].[ext]',
               outputPath: 'img',
-              publicPath: "./dist/img"
+              publicPath: "dist/img/"
             }
           },
           {
@@ -91,15 +92,21 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".ts", ".tsx", '.js'] },
   output: {
-    path: path.resolve(__dirname, "public/dist/"),
+    path: path.resolve(__dirname, "dist/"),
     publicPath: "dist/",
     filename: "bundle.js"
   },
   devServer: {
-    contentBase: path.join(__dirname, "public/"),
+    contentBase: path.join(__dirname, "dist/"),
     port: 3000,
     publicPath: "http://localhost:3000/dist/",
     hotOnly: true
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()]
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+      template:  "./public/index.html",
+      favicon: "./public/favicon.ico"
+  }),
+  ]
 };
