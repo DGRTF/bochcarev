@@ -1,1 +1,0 @@
-(self.webpackChunkBochkarev=self.webpackChunkBochkarev||[]).push([[441],{2441:function(e,u,c){"use strict";c.r(u),c.d(u,{default:function(){return n.Z}});var n=c(1322)}}]);
